@@ -1,10 +1,10 @@
 "use client";
 import Navbar from './Navbar';
-import React, { useEffect,useState } from 'react';
+import React, { useEffect } from 'react';
 
 
 const Navbarin: React.FC = () => {
-    const [count, setCount] = useState(0);
+ 
 
     useEffect(() => {
         // The debounce function receives our function as a parameter
@@ -47,9 +47,7 @@ const Navbarin: React.FC = () => {
         <>
             <div className='bg-navbar'>
                 <Navbar />
-                <button onClick={() => setCount(count + 1)}>
-                Click me: {count}
-            </button>
+              
             </div>
         </>
     );
